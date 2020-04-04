@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myweb2": {
+    "myweb": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myweb2",
+            "outputPath": "dist/myweb",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -58,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "myweb2:build"
+            "browserTarget": "myweb:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "myweb2:build:production"
+              "browserTarget": "myweb:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myweb2:build"
+            "browserTarget": "myweb:build"
           }
         },
         "test": {
@@ -82,7 +87,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [ ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -103,7 +108,7 @@
         }
       }
     },
-    "myweb2-e2e": {
+    "myweb-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "myweb2:serve"
+            "devServerTarget": "myweb:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "myweb2:serve:production"
+              "devServerTarget": "myweb:serve:production"
             }
           }
         },
@@ -132,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "myweb2"
+  "defaultProject": "myweb"
 }

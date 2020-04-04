@@ -1,0 +1,23 @@
+
+/* HEADER */
+#hk-header {
+  display: block;
+  font-family: Merriweather;
+  font-size: 30px;
+  color: #000000;
+  height: 150%;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 0.5cm;
+  background-color: #ffffff;
+  /* text-shadow: 2px 2px #ffdede; */
+  /* text-align: center; */
+  /* border-radius: 8px 8px 0 0; */
+}
+
+.hk-header-a {
+  text-decoration: none;
+  color: black;
+}

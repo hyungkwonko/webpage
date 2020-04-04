@@ -1,1 +1,213 @@
-/* You can add global styles to this file, and also import other style files */
+#hk-home,
+#hk-about,
+#hk-publication,
+#hk-footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 40px;
+  /* clear: both; */
+}
+
+@media screen and (max-width: 480px) {
+  #hk-header,
+  #hk-home,
+  #hk-nav,
+  #hk-footer {
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px 10px;
+    }
+}
+
+
+
+/* COLOR*/
+.hk-text-grey { color:#757575!important }
+.hk-grey{color:#fff!important;background-color:#757575!important}
+.hk-text-teal { color:#009688!important }
+.hk-teal{color:#fff!important;background-color:#009688!important}
+.hk-orange,.hk-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.hk-deep-orange,.hk-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.hk-pink,.hk-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.hk-purple,.hk-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.hk-deep-purple,.hk-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.hk-red,.hk-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.hk-blue,.hk-hover-blue:hover{color:#fff!important;background-color:#0003c5!important}
+.hk-yellow,.hk-hover-yellow:hover{color:#000!important;background-color:#fff020!important}
+.hk-text-magenta{ color:#6e0e0e!important }
+
+.hk-fix{color:#fff!important;background-color:#ff9e9e!important}
+
+.hk-text-blue{color: #0173B2!important}
+.hk-text-fix{color: #ff9e9e!important}
+.hk-text-black{color: #000000!important}
+.hk-text-purple{color:#9c27b0!important}
+.hk-text-green{color:#2db421!important}
+.hk-text-deep-purple{color:#673ab7!important}
+
+
+
+
+/* BORDER COLOR*/
+.hk-round-blue {
+  color: rgb(26, 121, 172)!important;
+  background-color: #ffffff;
+  border: 0.07em solid rgb(26, 121, 172);
+  border-radius:4px;
+}
+.hk-round-blue:hover {
+  color: #ffffff!important;
+  background-color: rgb(26, 121, 172);
+}
+.hk-round-red {
+  color: rgb(178, 1, 1)!important;
+  background-color: #ffffff;
+  border: 0.07em solid rgb(178, 1, 1);
+  border-radius:4px;
+}
+.hk-round-red:hover {
+  color: #ffffff!important;
+  background-color: rgb(178, 1, 1);
+}
+.hk-round-black {
+  color: #000000!important;
+  background-color: #ffffff;
+  border: 0.07em solid #000000;
+  border-radius:4px;
+}
+.hk-round-black:hover {
+  color: #ffffff!important;
+  background-color: #000000;
+}
+.hk-round-orange {
+  color: #ff5722!important;
+  background-color: #ffffff;
+  border: 0.07em solid #ff5722;
+  border-radius:4px;
+}
+.hk-round-orange:hover {
+  color: #ffffff!important;
+  background-color: #ff5722;
+}
+.hk-round-dark-green {
+  color: #0ea89b!important;
+  background-color: #ffffff;
+  border: 0.07em solid #0ea89b;
+  border-radius:4px;
+}
+.hk-round-dark-green:hover {
+  color: #ffffff!important;
+  background-color: #0ea89b;
+}
+.hk-round-purple {
+  color: #673ab7!important;
+  background-color: #ffffff;
+  border: 0.07em solid #673ab7;
+  border-radius:4px;
+}
+.hk-round-purple:hover {
+  color: #ffffff!important;
+  background-color: #673ab7;
+}
+
+/* MARGIN */
+.hk-margin-top { margin-top:16px!important; }
+.w3-margin-bottom { margin-bottom:16px!important; }
+.hk-margin-left { margin-left:16px!important; }
+.hk-margin-right { margin-right: 10px; }
+.hk-margin-right-small { margin-right: 5px; }
+
+/* SIZE*/
+.hk-xlarge{font-size:24px!important}
+.hk-xxlarge{font-size:36px!important}
+.hk-xxxlarge{font-size:48px!important}
+.hk-jumbo{font-size:64px!important}
+
+/* SHAPE */
+.hk-round-small{border-radius:2px}
+.hk-round,.hk-round-medium{border-radius:4px}
+.hk-round-large{border-radius:8px}
+.hk-round-xlarge{border-radius:16px}
+.hk-round-xxlarge{border-radius:32px}
+
+/* TAG */
+.hk-tag{display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+
+
+
+/* .work {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 270px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 300px) {
+  .work {
+    height: 40px;
+  }
+}
+.work .desc {
+  display: table-cell;
+  vertical-align: middle;
+  height: 270px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.work .desc h3 {
+  font-size: 14px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+}
+.work .desc span {
+  display: block;
+  color: #999999;
+  font-size: 12px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+}
+
+@media screen and (max-width: 300px) {
+  .work .desc {
+    opacity: 1;
+    background: transparent !important;
+  }
+  .work .desc h3 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .work .desc span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.work:hover .desc {
+  opacity: 1;
+}
+.work:hover .desc h3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.work:hover .desc span {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.js .animate-box {
+  opacity: 0;
+} */
+
+
